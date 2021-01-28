@@ -1,135 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+    
+<!---------------------------------------->
     <head>
 
-        <!--meta-->
+        <!-----META----->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Just another developer on the human
+         version of the spiders web. You are are welcome to open the virtual 
+         door above and enter my world.">
+        <!----- pending: <meta name="keywords" content=""> ----->
+        <meta name="author" content="Gabriel Salinas">
 
-        <!--CSS links-->    
+        <!-----CSS LINKS----->    
         <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-        <!--JS links-->
+        <!-----JS LINKS----->
         <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
-        <script src="/scripts.js" defer></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
+        <script src="JS/toggle.js" defer></script>
+        <script src="JS/top-btn.js" defer></script>
+        <script src="JS/copy-btn.js" defer></script>
 
-        <!--title-->
+         <!--jquery links-->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+         <script src="jquery-3.5.1.min.js"></script>
+
+        <!-----TITLE----->
         <title>Gabriel Salinas</title>
 
     </head>
+<!---------------------------------------->
 
     <body>
-        <!--start of cover page-->
+
+        <!--COVER PAGE ---------------------------------------->
         <section class="cover-page">
 
-            <!--external profiles-->
-            <div class="top-left">
-                <a href="https://stackoverflow.com/users/14895985/gassz?tab=profile" target="_blank"><i class="fa fa-stack-overflow"></i></a>
-                <a href="https://github.com/Gassz" target="_blank"><i class="fa fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/gabriel-salinas-szada-7a188196/" target="_blank"><i class="fa fa-linkedin"></i></a>
-            </div>
-            
-            <!--toggle-->
-            <div class="toggle-box">
-                <input type="checkbox" class="checkbox" id="checkbox-id">
-                <label for="checkbox-id" class="label">
-                <div class="ball"></div>
-                </label>
-            </div>
+                <!-----EXTERNAL PROFILES----->
+                <div class="top-left">
+                    
+                    <a href="https://stackoverflow.com/users/14895985/gassz?tab=profile" target="_blank">
+                    <i class="fa fa-stack-overflow"></i></a>
 
-            <!--cover title-->
-            <div class="cover-title">
-                <div>
-                    <h1 data-aos="zoom-out">Gabriel Salinas<span class="red">.</span><span class="orange">Codes</span></h1>
-                    <!--cover nav-->
-                    <a href="#projects">Projects </a>
-                    <a href="#">Downloads</a>
-                    <a href="#">About</a>
-                    <a href="#">Blog</a>
+                    <a href="https://github.com/Gassz" target="_blank">
+                    <i class="fa fa-github-square"></i></a>
+
+                    <a href="https://www.linkedin.com/in/gabriel-salinas-szada-7a188196/" target="_blank">
+                    <i class="fa fa-linkedin"></i></a>
+
                 </div>
-            </div>
 
-            <!--email-->
-            <div class="down-right">
-                <div><p>Let's talk</p></div>
-                <div><p id="p1">g.szada@gmail.com</p></div>
-                <div class="btn-box"><button id="copy-btn" onclick="copy('#p1')">Copy</button></div>
-            </div>
+                <!-----TOGGLE----->
+                <div class="toggle-box">
+
+                    <input type="checkbox" class="checkbox" id="checkbox-id">
+                    <label for="checkbox-id" class="label">
+                        <div class="ball"></div>
+                    </label>
+                
+                </div>
+
+                <!-----COVER TITLE----->
+                <div class="cover-title">
+                    
+                    <div>
+                        <h1 data-aos="zoom-in">Gabriel Salinas<span class="red">.</span><span class="orange">Codes</span></h1>
+                        <!--NAV-->
+                        <div class="nav-bg">
+                            <a href="#projects">Projects </a>
+                            <a href="#">Downloads</a>
+                            <a href="#">About</a>
+                            <a href="#">Blog</a>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!--COFFEE CUP-->
+                <div class="down-left">
+                                
+                    <a href="#">
+                        <div class="cup">
+                            <span class="tooltiptext">Buy me a coffee? or a pizza? :D</span>
+                            <div class="handle"></div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <!-----CONTACT SECTION----->
+                <div class="down-right">
+                    <div><p>Let's talk</p></div>
+                    <div><p id="p1">g.szada@gmail.com</p></div>
+                    <div class="btn-box"><button id="copy-btn" onclick="copy('#p1')">Copy</button></div>
+                </div>
 
         </section>
-        <!--end of cover page-->
-
+        <!--END OF COVER PAGE---------------------------------->
         
-        <!--start of main content-->
-        <!--about section-->
-   
-        <div class="header" data-aos="fade-up">
-            <h2>About Me</h2>
-            <h3>"An image is worth more than a thousand words."</h3>
-        </div>
- 
-        <div class="wrapper1">
+        <!--top button-->
+        <button id="top-btn"><i class="fas fa-hand-point-up"></i></button>
 
-                <div class="row">
-                    
-                    <div class="column">
-                        <img src="/about-images/7.jpg" style="width:100%">
-                        <img src="/about-images/2.jpg" style="width:100%">
-                    </div>   
+        <!--ABOUT SEGMENT-------------------------------------->
+        <div class="about-segment">
 
-                    <div class="column">
-                        <img src="/about-images/4.jpg" style="width:100%">
-                        <img src="/about-images/5.jpg" style="width:100%">
-                    </div>   
-
-                    <div class="column">
-                        <img src="/about-images/6.png" style="width:100%">
-                        <img src="/about-images/8.jpg" style="width:100%">
-                    </div>   
-
-                </div>
-
-        </div>
-
-        <div class="header">
-            <h3>Technologies I've worked with</h3>
+            <div class="header">
+                <h2 data-aos="fade-up">About Me</h2>
             </div>
 
-        <div class="tech-box">
-            <div class="row">
-                    
-                <div class="column">
-                    <img src="/tech-icons/adobe.png" style="width:40px;">
-                    <img src="/tech-icons/css.png" style="width:40px;">
-                </div>   
+                <h4 data-aos="fade-up">
+                    In the early years of otservers, I developed a pretty 
+                    popular server called TibiaCL. In 2015 after finishing 
+                    my university studies I worked several months developing
+                    a brand new one, with its unique template, world map, 
+                    monster, and others. It's pretty damn good and it never
+                    got to fruition because of personal reasons. I need 
+                    someone to guide me on how I can share it in the best 
+                    way possible. For the template it would be great to 
+                    have a live demo. I'm thinking about uploading all the 
+                    files to Github in case people want to improve on it.
+                </h4>
 
-                <div class="column">
-                    <img src="/tech-icons/gimp.png" style="width:40px;">
-                    <img src="/tech-icons/svg.png" style="width:40px;">
-                </div>   
-
-                <div class="column">
-                    <img src="/tech-icons/php.png" style="width:40px;">
-                    <img src="/tech-icons/mysql.png" style="width:40px;">
-                </div>   
-
-            </div>
         </div>
+        <!--END OF ABOUT SEGMENT------------------------------->
+      
 
-        <!--start of projects section-->
-        <div class="wrapper2" id="projects">
+        <!--PROJECTS SEGMENT----------------------------------->
+        <div class="projects-segment" id="projects">
 
         <div class="header">
-            <h2 data-aos="zoom-out">Projects</h2>
-        </div>
+            <h2 style="color:#404040">Projects</h2>
+            </div>
 
-            <h3 data-aos="fade-up">TibiaCL</h3>
+            <h3 style="color:#404040">TibiaCL</h3>
 
-            <h4 data-aos="fade-left">In the early years of otservers, I developed a pretty 
+            <h4 style="color:#404040">
+                In the early years of otservers, I developed a pretty 
                 popular server called TibiaCL. In 2015 after finishing 
                 my university studies I worked several months developing
                 a brand new one, with its unique template, world map, 
@@ -138,61 +147,36 @@
                 someone to guide me on how I can share it in the best 
                 way possible. For the template it would be great to 
                 have a live demo. I'm thinking about uploading all the 
-                files to Github in case people want to improve on it.</h4>
+                files to Github in case people want to improve on it.
+            </h4>
 
-        <span class="a" data-aos="zoom-in">php</span>
-        <span class="a" data-aos="zoom-in">css</span>
-        <span class="a" data-aos="zoom-in">html</span>
-        <span class="a" data-aos="zoom-in">sql</span>
+                <span class="a">php</span>
+                <span class="a">css</span>
+                <span class="a">html</span>
+                <span class="a">sql</span>
 
-        <h3 data-aos="fade-up">Project2</h3>
-
-                <h4 data-aos="fade-left">In the early years of otservers, I developed a pretty 
-                popular server called TibiaCL. In 2015 after finishing 
-                my university studies I worked several months developing
-                a brand new one, with its unique template, world map, 
-                monster, and others. It's pretty damn good and it never
-                got to fruition because of personal reasons. I need 
-                someone to guide me on how I can share it in the best 
-                way possible. For the template it would be great to 
-                have a live demo. I'm thinking about uploading all the 
-                files to Github in case people want to improve on it.</h4>
-
-                <span class="a" data-aos="zoom-in">php</span>
-                <span class="a" data-aos="zoom-in">css</span>
-                <span class="a" data-aos="zoom-in">html</span>
-                <span class="a" data-aos="zoom-in">sql</span>
-
-                <h3 data-aos="fade-up">Project3</h3>
-
-                <h4 data-aos="fade-left">In the early years of otservers, I developed a pretty 
-                popular server called TibiaCL. In 2015 after finishing 
-                my university studies I worked several months developing
-                a brand new one, with its unique template, world map, 
-                monster, and others. It's pretty damn good and it never
-                got to fruition because of personal reasons. I need 
-                someone to guide me on how I can share it in the best 
-                way possible. For the template it would be great to 
-                have a live demo. I'm thinking about uploading all the 
-                files to Github in case people want to improve on it.</h4>
                 
 
-                <span class="a" data-aos="zoom-in">php</span>
-                <span class="a" data-aos="zoom-in">css</span>
-                <span class="a" data-aos="zoom-in">html</span>
-                <span class="a" data-aos="zoom-in">sql</span>
         </div>
+        <!--END OF PROJECTS SEGMENT---------------------------->
 
-        <!--Downloads section-->
+
+        <!--DOWNLOADS SEGMENT---------------------------------->
         <div class="header">
             <h2>Downloads</h2>
-            </div>
+        </div>
+        <!--END OF DOWNLOADS SEGMENT--------------------------->
 
-        <!--Footer-->
+
+        <!--FOOTER--------------------------------------------->
         <footer>
+
             <hr>
+           
             <p class="copyright">
-                Design & developed by <span class="orange">Gabriel Salinas</span> - All right reserved &copy; Budapest 2021
+                Design & developed by 
+                <span class="orange">Gabriel Salinas</span> 
+                - All right reserved &copy; Budapest 2021
                 <br><br>
                 <a href="https://github.com/Gassz/WallBraker-Portfolio" target="_blank">WallBrake Portofolio v0.04</a>
                 <br><br>
@@ -201,14 +185,15 @@
                 <img src="/tech-icons/javascript.png" width="25px">
                 <img src="/tech-icons/jquery.png" width="25px">
             </p>
-            
+
         </footer>
+        <!--END OF FOOTER-------------------------------------->
 
-        </div><!--close scroll container div-->
+<!--aos css style import-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 
-        <!--aos css style import-->
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>AOS.init();</script>
 
     </body>
+
 </html>
