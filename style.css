@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
 
 :root {
   --scrollbar-colors: rgb(185, 90, 0) #0b1a2e;
@@ -21,16 +21,27 @@
   font-family: var(--main-font);
   scroll-behavior: smooth;
 }
-html,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
 body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-  background-color: #0b1a2e;
+  background: var(--cover-bg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 /* ------- GENERAL STYLING ---------- */
+p {
+  text-align: justify;
+}
 a {
   color: orange;
   text-decoration: none;
@@ -46,7 +57,7 @@ h1 {
   font-size: 50px;
 }
 h2 {
-  color: rgb(255, 255, 255);
+  color: #f2f2f2;
   font-family: var(--main-font);
   font-size: 40px;
   font-weight: 500;
@@ -54,7 +65,7 @@ h2 {
 h3 {
   font-family: var(--main-font);
   font-weight: 400;
-  font-size: 30px;
+  font-size: 25px;
   color: white;
 }
 h4 {
@@ -75,9 +86,11 @@ span.a {
   border-radius: 5px;
 }
 .header {
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 32px;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  /*border: 1px solid white;*/
 }
 .red {
   color: red;
@@ -118,7 +131,7 @@ span.a {
 /* profile links */
 .cover-page .top-left {
   position: absolute;
-  width: 180px;
+  width: 230px;
   height: 70px;
   padding-top: 20px;
   padding-left: 30px;
@@ -337,58 +350,152 @@ span.a {
 }
 
 /* ------------- ABOUT SEGMENT --------------- */
+.bg-color-one {
+  background-color: #0b1a2e;
+}
 .about-segment {
   padding-bottom: 200px;
-  margin-top: 200px;
+  padding-top: 70px;
   margin: auto;
   width: 100%;
   min-width: 400px;
-  max-width: 800px;
+  max-width: 1000px;
   /*border: 1px solid white;*/
-}
-
-.about-segment p {
-  text-align: justify;
 }
 .about-segment h3 {
   text-align: center;
 }
-
-/* ------------- PROJECTS SEGMENT --------------- */
-.projects-segment {
-  padding-right: 20%;
-  padding-left: 20%;
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-color: #f7f7f7;
-  margin-top: 200px;
-  margin: auto;
-  width: 100%;
+/* Clear floats after the columns */
+.about-row {
+  content: "";
+  display: table;
+  clear: both;
+}
+.about-row .col-one {
+  padding-left: 50px;
+  padding-right: 30px;
+  float: left;
+  font-size: 15px;
+  font-weight: 200;
+  color: #f2f2f2;
+  width: 70%;
+  height: 100%;
   /*border: 1px solid white;*/
 }
-/* responsive layout - makes a two column layout 
-instead of four columns */
-@media (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
+.about-row .col-two {
+  padding-right: 50px;
+  padding-top: 22px;
+  display: table-cell;
+  float: left;
+  width: 30%;
+  /*border: 1px solid white;*/
+}
+.fun-info {
+  font-size: 14px;
+  font-weight: 200;
+  color: #f2f2f2;
+  text-align: left;
+  padding-left: 0px;
+  max-width: 300px;
+  /*border: 1px solid white;*/
+}
+.about-segment .about-row .col-one i {
+  color: white;
+  font-size: 40px;
+  float: left;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+/* on screens that are 700px wide or less, go from 
+two columns to one column */
+@media screen and (max-width: 700px) {
+  .about-row .col-one {
+    width: 100%;
+  }
+  .about-row .col-two {
+    visibility: hidden;
+  }
+  .about-row .fun-info {
+    visibility: hidden;
   }
 }
-/* responsive layout - makes the two columns stack on top 
-of each other instead of next to each other */
-@media (max-width: 600px) {
-  .column {
-    flex: 100%;
-    max-width: 100%;
+
+/* ------- svg divider ------ */
+.divider {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  /*border: 1px solid white;*/
+}
+
+/* ------------- PROJECTS SEGMENT --------------- */
+.bg-color-two {
+  background-color: #f7f7f7;
+}
+.projects-segment {
+  padding-bottom: 200px;
+  padding-top: 70px;
+  margin: auto;
+  width: 100%;
+  min-width: 400px;
+  max-width: 1000px;
+  /*border: 1px solid black;*/
+}
+.projects-row {
+  content: "";
+  display: table;
+  clear: both;
+  /*border: 1px solid black;*/
+}
+.projects-row .col-one {
+  padding-top: 35px;
+  padding-left: 50px;
+  padding-right: 20px;
+  float: left;
+  font-size: 15px;
+  font-weight: 200;
+  color: #f2f2f2;
+  width: 25%;
+  height: fit-content;
+  /*border: 1px solid black;*/
+}
+
+.projects-row .col-two {
+  padding-right: 50px;
+  padding-top: 0px;
+  display: table-cell;
+  float: left;
+  width: 75%;
+  height: fit-content;
+  /*border: 1px solid black;*/
+}
+
+@media screen and (max-width: 1000px) {
+  .projects-row .col-one {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
+  .projects-row .col-two {
+    width: 100%;
+  }
+}
+
+/* ------------- DOWNLOADS SEGMENT --------------- */
+.downloads-segment {
+  padding-top: 100px;
+  background-color: #0b1a2e;
+  margin: auto;
+  width: 100%;
+  height: 700px;
+  /*border: 1px solid white;*/
 }
 
 /* ------------- FOOTER --------------- */
 footer {
+  background-color: orangered;
   width: 100%;
-  height: 140px;
-  bottom: 0;
-  margin-top: 200px;
+  height: 300px;
   /*border: 1px solid white;*/
 }
 .copyright {
