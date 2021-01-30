@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
 :root {
   --scrollbar-colors: rgb(185, 90, 0) #0b1a2e;
@@ -9,12 +9,10 @@
   --cover-page-main-color: rgba(255, 255, 255, 0.7);
   --nav-text-color: white;
 }
-
 .dark-mode {
   --scrollbar-colors: rgb(0, 180, 90) #0b1a2e;
   --cover-bg: url(bg-images/night-bg.jpg) no-repeat 50% 50%;
 }
-
 * {
   box-sizing: border-box;
   scrollbar-color: var(--scrollbar-colors);
@@ -22,8 +20,6 @@
   scroll-behavior: smooth;
 }
 html {
-  margin: 0;
-  padding: 0;
   width: 100%;
   height: 100%;
 }
@@ -38,12 +34,42 @@ body {
   background-size: cover;
 }
 
+/* ------- dividers ------ */
+.divider-one {
+  width: 100%;
+  height: 150px;
+  background-color: transparent;
+  /*border: 1px solid white;*/
+}
+.divider-two {
+  width: 100%;
+  height: 50px;
+  background-color: #0b1a2e;
+  /*border: 1px solid white;*/
+}
+.divider-three {
+  width: 100%;
+  height: 40px;
+  background-color: #1b3c68;
+  /*border: 1px solid white;*/
+}
+.divider-four {
+  width: 100%;
+  height: 80px;
+  background-color: #1b3c68;
+  /*border: 1px solid white;*/
+}
+
 /* ------- GENERAL STYLING ---------- */
 p {
-  text-align: justify;
+  margin: 0%;
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: 300;
 }
 a {
-  color: orange;
+  font-weight: 400;
+  color: var(--hover-color);
   text-decoration: none;
 }
 a:hover {
@@ -52,27 +78,6 @@ a:hover {
 hr {
   color: white;
   opacity: 0.3;
-}
-h1 {
-  font-size: 50px;
-}
-h2 {
-  color: #f2f2f2;
-  font-family: var(--main-font);
-  font-size: 40px;
-  font-weight: 500;
-}
-h3 {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 25px;
-  color: white;
-}
-h4 {
-  font-family: var(--main-font);
-  font-weight: 300;
-  font-size: 17px;
-  color: white;
 }
 span.a {
   display: inline; /* the default for span */
@@ -84,22 +89,6 @@ span.a {
   padding: 5px;
   border: 2px solid #e9780f;
   border-radius: 5px;
-}
-.header {
-  text-align: left;
-  padding-top: 0px;
-  padding-bottom: 30px;
-  padding-left: 50px;
-  /*border: 1px solid white;*/
-}
-.red {
-  color: red;
-}
-.orange {
-  color: orange;
-}
-.yellow {
-  color: yellow;
 }
 
 /* top button */
@@ -214,13 +203,6 @@ span.a {
 }
 
 /* navigation bar */
-/*.nav-bg {
-  padding-top: 10px;
-  width: 50%;
-  height: 50px;
-  background-color: rgba(255, 129, 27, 0.4);
-  border-radius: 10px;
-}*/
 .cover-title div a {
   color: var(--nav-text-color);
   font-size: 18px;
@@ -314,19 +296,20 @@ span.a {
   right: 0;
   /*border: 1px solid white;*/
 }
-.down-right div {
+.down-right .text {
   float: left;
   padding-right: 20px;
+  padding-top: 20px;
   width: max-content;
   height: 60px;
   /*border: 1px solid white;*/
 }
 .btn-box {
+  padding-top: 12px;
   float: left;
   padding-right: 10px;
-  padding-top: 7px;
   width: max-content;
-  height: 50px;
+  height: 60px;
   /*border: 1px solid white;*/
 }
 .btn-box button {
@@ -346,139 +329,96 @@ span.a {
   color: white;
 }
 .btn-box button:active {
-  background-color: red;
+  font-weight: 500;
+  background-color: rgba(253, 59, 0, 0.5);
 }
 
 /* ------------- ABOUT SEGMENT --------------- */
-.bg-color-one {
-  background-color: #0b1a2e;
-}
-.about-segment {
-  padding-bottom: 200px;
-  padding-top: 70px;
-  margin: auto;
+#about-start {
   width: 100%;
-  min-width: 400px;
-  max-width: 1000px;
-  /*border: 1px solid white;*/
+  height: 100px;
+  background-color: #0b1a2e;
+  font-size: 60px;
+  color: #e2e2e2;
 }
-.about-segment h3 {
-  text-align: center;
-}
-/* Clear floats after the columns */
-.about-row {
-  content: "";
-  display: table;
-  clear: both;
-}
-.about-row .col-one {
-  padding-left: 50px;
-  padding-right: 30px;
-  float: left;
-  font-size: 15px;
-  font-weight: 200;
-  color: #f2f2f2;
-  width: 70%;
-  height: 100%;
-  /*border: 1px solid white;*/
-}
-.about-row .col-two {
+.about-text-box {
+  margin: auto;
+  max-width: 800px;
+  padding-top: 30px;
   padding-right: 50px;
-  padding-top: 22px;
-  display: table-cell;
-  float: left;
-  width: 30%;
-  /*border: 1px solid white;*/
-}
-.fun-info {
-  font-size: 14px;
-  font-weight: 200;
-  color: #f2f2f2;
+  padding-left: 50px;
+  padding-bottom: 50px;
   text-align: left;
-  padding-left: 0px;
-  max-width: 300px;
+  color: white;
   /*border: 1px solid white;*/
 }
-.about-segment .about-row .col-one i {
-  color: white;
-  font-size: 40px;
-  float: left;
-  margin-top: 20px;
-  margin-right: 50px;
+.tech-section {
+  background-color: #1b3c68;
+  border-top: 1px solid rgb(0, 0, 0, 0.1);
+  height: 250px;
+  /*border: 1px solid;*/
 }
-/* on screens that are 700px wide or less, go from 
-two columns to one column */
-@media screen and (max-width: 700px) {
-  .about-row .col-one {
-    width: 100%;
-  }
-  .about-row .col-two {
-    visibility: hidden;
-  }
-  .about-row .fun-info {
-    visibility: hidden;
-  }
+.tech-title {
+  max-width: 800px;
+  padding-right: 50px;
+  padding-left: 50px;
+  padding-top: 20px;
+  font-weight: 300;
+  color: #b8dfff;
+  font-size: 18px;
+  margin: auto;
+  height: 60px;
+  /*border: 1px solid;*/
+}
+.tech-box {
+  max-width: 800px;
+  padding-right: 20px;
+  padding-left: 50px;
+  height: 150px;
+  margin: auto;
+  /*border: 1px solid black;*/
 }
 
-/* ------- svg divider ------ */
-.divider {
-  width: 100%;
-  height: 150px;
-  background-color: transparent;
-  /*border: 1px solid white;*/
+.tech-box i {
+  margin-top: 20px;
+  margin-right: 25px;
+  color: white;
+  font-size: 35px;
+  float: left;
 }
 
 /* ------------- PROJECTS SEGMENT --------------- */
-.bg-color-two {
-  background-color: #f7f7f7;
-}
-.projects-segment {
-  padding-bottom: 200px;
-  padding-top: 70px;
+.projects-wrapper-one {
   margin: auto;
-  width: 100%;
-  min-width: 400px;
-  max-width: 1000px;
-  /*border: 1px solid black;*/
-}
-.projects-row {
-  content: "";
-  display: table;
-  clear: both;
-  /*border: 1px solid black;*/
-}
-.projects-row .col-one {
-  padding-top: 35px;
-  padding-left: 50px;
-  padding-right: 20px;
-  float: left;
-  font-size: 15px;
-  font-weight: 200;
-  color: #f2f2f2;
-  width: 25%;
-  height: fit-content;
-  /*border: 1px solid black;*/
-}
-
-.projects-row .col-two {
+  max-width: 800px;
+  padding-top: 50px;
   padding-right: 50px;
-  padding-top: 0px;
-  display: table-cell;
-  float: left;
-  width: 75%;
-  height: fit-content;
-  /*border: 1px solid black;*/
+  padding-left: 50px;
+  padding-bottom: 200px;
+  text-align: center;
+}
+#project-start {
+  width: 100%;
+  height: 100px;
+  background-color: #1b3c68;
+  font-size: 60px;
+  color: #f7f7f7;
 }
 
-@media screen and (max-width: 1000px) {
-  .projects-row .col-one {
-    visibility: hidden;
-    width: 0;
-    height: 0;
-  }
-  .projects-row .col-two {
-    width: 100%;
-  }
+/*card2*/
+.card-image.card2 {
+  background: url("/images/web-tibiacl.png");
+  background-size: cover;
+}
+.card-text.card2 .date {
+  color: rgb(255, 77, 7);
+}
+.card-stats.card2 .border {
+  border-left: 1px solid rgb(185, 67, 20);
+  border-right: 1px solid rgb(185, 67, 20);
+}
+.card-stats.card2 {
+  background: rgb(255, 77, 7);
 }
 
 /* ------------- DOWNLOADS SEGMENT --------------- */

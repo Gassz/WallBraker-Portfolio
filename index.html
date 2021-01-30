@@ -7,9 +7,7 @@
         <!-----META----->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Just another developer on the human
-         version of the spiders web. You are are welcome to open the virtual 
-         door above and enter my world.">
+        <meta name="description" content="">
         <!----- pending: <meta name="keywords" content=""> ----->
         <meta name="author" content="Gabriel Salinas">
 
@@ -37,7 +35,13 @@
 
     <body>
 
-        <!--COVER PAGE ---------------------------------------->
+        <!--top button-->
+        <button id="top-btn">
+            <i class="fas fa-hand-point-up"></i>
+        </button>
+
+
+        <!-- COVER PAGE ---------------------------------------->
         <section class="cover-page">
 
                 <!-----EXTERNAL PROFILES----->
@@ -71,13 +75,13 @@
                 <div class="cover-title">
                     
                     <div>
-                        <h1 data-aos="zoom-in">Gabriel Salinas<span class="red">.</span><span class="orange">Codes</span></h1>
+                        <h1 data-aos="zoom-in">Gabriel Salinas.<span style="color:orangered">Codes</span></h1>
                         
                         <!--NAV-->
                         <div class="nav-bg">
-                            <a href="#projects">Projects </a>
+                            <a href="#project-start">Projects </a>
                             <a href="#downloads">Downloads</a>
-                            <a href="#about">About</a>
+                            <a href="#about-start">About</a>
                             <a href="#">Blog</a>
                         </div>
                     </div>
@@ -98,250 +102,247 @@
 
                 <!-----CONTACT SECTION----->
                 <div class="down-right">
-                    <div><p>Let's talk</p></div>
-                    <div><p id="p1">g.szada@gmail.com</p></div>
+                    <div class="text"><p>Let's talk</p></div>
+                    <div class="text"><p id="p1">g.szada@gmail.com</p></div>
                     <div class="btn-box"><button id="copy-btn" onclick="copy('#p1')">Copy</button></div>
                 </div>
 
         </section>
-        <!--END OF COVER PAGE---------------------------------->
+        <!------------------------------------------------------>
         
-        <!--top button-->
-        <button id="top-btn">
-            <i class="fas fa-hand-point-up"></i>
-        </button>
 
-        <!--SVG divider-->
-        <div class="divider">
+        <!-- BETWEEN ------------------------------------------->
+        <div class="divider-one">
+            <svg style= "fill: #0b1a2e;
+            width: 100%;
+            height: 100%;"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <polygon points="0,100 100,0 100,100" />
+            </svg>
+        </div>
+
+        <div style= "width:100%; 
+        height: 200px; 
+        background-color: #0b1a2e;">
+        </div>
+        <!------------------------------------------------------>
+
+
+        <!-- ABOUT --------------------------------------------->
+        <div id="about-start">
+            
+            <center data-aos="zoom-in">
+                About <span style="color:orangered">Me</span>
+            </center>
+
+        </div>
+
+        <!--space------------->
+        <div style="background-color:#1b3c68; height:30px;">
+        </div>
+        <!-------------------->
+
+        <div class="divider-three">
             <svg style="
-                fill: #0b1a2e;
-                width: 100%;
-                height: 100%;"
-                viewBox="0 0 100 100"
-                preserveAspectRatio="none">
-                <polygon points="0,100 100,0 100,100" />
+            fill: #2b7bbd;
+            width: 100%;
+            height: 100%;"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <polygon points="0,0 0,100 100,100" />
             </svg>
         </div>
 
-        <!--ABOUT SEGMENT-------------------------------------->
-    <div class="bg-color-one">
-        <div class="about-segment" id="about">
+        <div style="background-color:#2b7bbd;">
 
-            <div class="header">
-                <h2 data-aos="fade-up">About <span class="orange">Me</span></h2>
-            </div>
+            <div class="about-text-box">
 
-            <!--start of row-->
-            <div class="about-row">
+                    <div style="float:right; 
+                    padding-left:15px; 
+                    padding-top:8px;
+                    padding-right:3px;">
 
-                <!--text-->
-                <div class="col-one">
-                    <h4>
+                        <img  data-aos="zoom-in" src="about-images/6.png" 
+                        style="height:205px; border-radius: 4px;">
 
-                        <p>
-                        I’m pretty sure you don’t want to read much. So, I will keep
-                        it as simple as possible and in case you would like to know 
-                        more about me you can go <a href="#">here</a>. 
-                        </p>
-    
-                        <p>
-                        I’ve always had the desire for creating. If I’m sure about one thing
-                        about myself is that I love it and is very difficult for me to not do
-                        it. I can remember myself designing shoes and perfume bottles at the
-                        age of 4. One design was a perfume with the form of a light bulb, 
-                        to my impression many years after I saw a brand selling a perfume 
-                        with the exact same design. 
-                        </p>
-                        
-                        I would have loved to turns this ideas into reality at the time. Maybe that’s 
-                        why I got hooked the first time I saw an awesome website created by 
-                        a friend in school at the age of 11. Since then I got fascinated by 
-                        the idea of creating one. At the age of 14 with not much social 
-                        life I started created my first HTML file in a text document. 
-                        </p>
-                    
-                        <p>
-                        And so, my journey as a developer started. Who would’ve thought that
-                        3 years laters I would had a MMORPG server in Chile a modified version
-                        of the <a href="#">Tibia CipSoft</a> game. My community was so popular at the time that
-                        it was shown in national television, obviously it collapsed and crashed,
-                        the amount of users in the forum has surpass the thousand online. 
-                        </p>
-    
-                        <p>
-                        I’m not sure if programming itself is my passion, I would say is a
-                        combination of things. Coding is a catalyst for creation. To be able
-                        to portrai a complex idea that was taking from the intangible space
-                        of imagination into reality is fascinating.
-                        </p>
-    
-                        <p>
-                        This feeling is something I always try to tap into in all my projects. 
-                        If I have to be honest I am not persuing money. I’m more interested in 
-                        enjoying the process and challenge of the creation itself. This is where 
-                        I want to be. In the world of ideas, logic and mental laberinth.
-                        </p>
-
-                        <br>
-                    <h4 style="font-weight: 500;">Some technologies I've worked with:</h4>
+                    </div>
                 
-                </h4>
+                <p data-aos="fade-up">I’m pretty sure you don’t want to read much. So, I will 
+                keep it as simple as possible and in case you would like 
+                to know more about me you can go <a href="#">here</a>.
+                </p>
+                
+                <p data-aos="fade-up">
+                I’ve always had the desire for creating. If I’m sure about
+                one thing about myself is that I love it and is very
+                difficult for me to not do it. I can remember myself
+                designing shoes and perfume bottles at the age of 4.
+                One design was a perfume with the form of a light bulb,
+                to my impression many years after I saw a brand selling 
+                a perfume with the exact same design.
+                </p>
 
-                    <i class="devicon-java-plain" style="margin-left:0px;"></i>
-                    <i class="devicon-php-plain"></i>
-                    <i class="devicon-apache-line-wordmark"></i>
-                    <i class="devicon-mysql-plain-wordmark"></i>
-                    <i class="devicon-css3-plain-wordmark"></i>
-                    <i class="devicon-html5-plain-wordmark"></i>
+                <p data-aos="fade-up">
+                I would have loved to turns this ideas into reality at the 
+                time. Maybe that’s why I got hooked the first time I saw an 
+                awesome website created by a friend in school at the age of 11. 
+                Since then I got fascinated by the idea of creating one. At the 
+                age of 14 with not much social life I started created my first HTML 
+                file in a text document.
+                </p>
+                
+                <div style="float:left; 
+                margin-right:15px; 
+                padding-top:8px;
+                padding-right:3px;">
                     
-                    <i class="devicon-gimp-plain" style="margin-left:0px;"></i>
-                    <i class="devicon-photoshop-line"></i>
-                    <i  class="devicon-csharp-line-wordmark"></i>
-                    <i class="devicon-javascript-plain"></i>
-                    <i class="devicon-github-original-wordmark"></i>
-                    <i class="devicon-jquery-plain-wordmark"></i>
-
+                    <img data-aos="zoom-in" src="about-images/3.jpg"
+                     style="height:155px; border-radius: 4px;">
+                
                 </div>
 
-                <!--slideshow to the right-->
-                <div class="col-two">
-                    
-                   
-                            <img 
-                            src="about-images/6.png"
-                            width="100%"
-                            style="max-width:300px;
-                            min-width:200px;
-                            border-radius: 8px;">
-                       
-                       <div class="fun-info">
-                            <br>
-                            <b>- Age</b>: 32
-                            <br>
-                            <b>- Started coding at</b>: 14
-                            <br>
-                            <b>- Hobbies</b>: outdoor spots
-                            <br><br>
-                            
-                    
-                        <a href="https://stackoverflow.com/users/14895985/gassz">
-                            <img src="https://stackoverflow.com/users/flair/14895985.png" 
-                            width="208" 
-                            height="58" 
-                            alt="profile for Gassz at Stack Overflow, Q&amp;A for professional and enthusiast programmers" 
-                            title="profile for Gassz at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-                        </a>
-                        
-                        </div>
+                <p data-aos="fade-up">
+                And so, my journey as a developer started. Who would’ve thought 
+                that 3 years laters I would had a MMORPG server in Chile a modified 
+                version of the <a href="#">Tibia CipSoft</a> game. My community was so popular 
+                at the time that it was shown in national television, obviously 
+                it collapsed and crashed, the amount of users in the forum has 
+                surpass the thousand online.
+                </p>
 
-                </div>
+                <p data-aos="fade-up">
+                I’m not sure if programming itself is my passion, I would say 
+                is a combination of things. Coding is a catalyst for creation. 
+                To be able to portrai a complex idea that was taking from the 
+                intangible space of imagination into reality is fascinating.
+                </p>
 
-            </div><!--end of row-->
-
-        </div>
-    </div><!--end of bg color-->
-
-        <!--END OF ABOUT SEGMENT------------------------------->
-      
-        <!--SVG divider-->
-        <div class="divider" style="background-color:#0b1a2e;">
-             
-            <svg style="fill: #f7f7f7;
-                    width: 100%;
-                    height: 100%;"
-                    viewBox="0 0 100 100"
-                    preserveAspectRatio="none">
-                <polygon points="0,100 100,0 100,100" />
-            </svg>
-        
-        </div>
-
-        <!--PROJECTS SEGMENT----------------------------------->
-        <div class="bg-color-two">
-            <div class="projects-segment" id="projects">
-
-                <div class="header">
-                    <h2 data-aos="fade-up" style="color:#404040">Projects <span class="orange">I've Done</span></h2>
-                </div>
-
-                    <div class="projects-row">
-
-                        <div class="col-one">
-
-                            <a href="#" target="_blank">
-                                <img 
-                                src="images/web-tibiacl.png"
-                                width="100%"
-                                height="100%;">
-                            </a>
-
-                        </div>
-
-                        <div class="col-two">
-
-                            <h3 style="color:#404040">Template for Znote ACC</h3>
-
-                            <h4 style="color:#404040">
-                                <p>
-                                Template developed exlusively for the Znote Acc. A website platform for 
-                                Tibia Servers in which the players can create accounts, characters, 
-                                see the server status, buy exlusive items, read the news, access the community
-                                forum and others.
-                            </p>
-                            </h4>
-
-                                <span class="a">php</span>
-                                <span class="a">css</span>
-                                <span class="a">html</span>
-                                <span class="a">sql</span>
-                                <span class="a">photoshop</span>
-
-                        </div>
-
-                    </div>
-
-                    <div class="projects-row">
-
-                        <div class="col-one">
-
-                            <a href="#" target="_blank">
-                                <img 
-                                src="images/server-tibiacl.png"
-                                width="100%"
-                                height="100%;">
-                            </a>
-
-                        </div>
-
-                        <div class="col-two">
-
-                            <h3 style="color:#404040">TibiaCL Server</h3>
-
-                            <h4 style="color:#404040">
-                                <p>
-                                Template developed exlusively for the Znote Acc. A website platform for 
-                                Tibia Servers in which the players can create accounts, characters, 
-                                see the server status, buy exlusive items, read the news, access the community
-                                forum and others.
-                            </p>
-                            </h4>
-
-                                <span class="a">c#</span>
-                                <span class="a">Apache</span>
-                                <span class="a">Mysql</span>
-                                <span class="a">Xoomla</span>
-                                <span class="a">xml</span>
-
-                        </div>
-
-                    </div>
+                <p data-aos="fade-up">
+                This feeling is something I always try to tap into in all my 
+                projects. If I have to be honest I am not persuing money. I’m 
+                more interested in enjoying the process and challenge of the 
+                creation itself. This is where I want to be. In the world of 
+                ideas, logic and mental laberinth.
+                </p>
 
             </div>
-        </div>    
-        <!--END OF PROJECTS SEGMENT---------------------------->
+
+        </div>
+
+        <div class="tech-section">
+            <div class="tech-title">
+                Some technologies I've worked with
+            </div>
+
+            <div class="tech-box">
+                <i class="devicon-java-plain" style="margin-left:0px;"></i>
+                <i class="devicon-php-plain"></i>
+                <i class="devicon-apache-line-wordmark"></i>
+                <i class="devicon-mysql-plain-wordmark"></i>
+                <i class="devicon-css3-plain-wordmark"></i>
+                <i class="devicon-html5-plain-wordmark"></i>
+                
+                <i class="devicon-gimp-plain" style="margin-left:0px;"></i>
+                <i class="devicon-photoshop-line"></i>
+                <i  class="devicon-csharp-line-wordmark"></i>
+                <i class="devicon-javascript-plain"></i>
+                <i class="devicon-github-original-wordmark"></i>
+                <i class="devicon-jquery-plain-wordmark"></i>
+            </div>
+            <hr>
+        </div>
+
+
+
+        <!--space------------->
+        <div style= "width:100%; 
+        height: 150px; 
+        background-color:#1b3c68;">
+        </div>
+        <!-------------------->
+
+
+        <!--PROJECTS---------------------------------------------------->
+        <div id="project-start">
+            <center data-aos="zoom-in">
+                Projects
+            </center>
+        </div>
+
+        <div class="divider-four">
+            <svg style= "fill: #f7f7f7;
+            width: 100%;
+            height: 100%;"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none">
+            <polygon points="0,100 100,0 100,100" />
+            </svg>
+        </div>
+
+
+    <div style="background-color:#f7f7f7;">
+        
+        <div class="projects-wrapper-one">
+
+            <div style="float:left; 
+            margin-right:15px; 
+            padding-top:8px;
+            padding-right:3px;">
+                
+                <img data-aos="zoom-in" src="images/server-tibiacl.png"
+                 style="height:155px; border-radius: 4px;">
+            
+            </div>
+
+            <p data-aos="fade-up">
+            And so, my journey as a developer started. Who would’ve thought 
+            that 3 years laters I would had a MMORPG server in Chile a modified 
+            version of the <a href="#">Tibia CipSoft</a> game. My community was so popular 
+            at the time that it was shown in national television, obviously 
+            it collapsed and crashed, the amount of users in the forum has 
+            surpass the thousand online.
+            </p>
+
+            <p data-aos="fade-up">
+            I’m not sure if programming itself is my passion, I would say 
+            is a combination of things. Coding is a catalyst for creation. 
+            To be able to portrai a complex idea that was taking from the 
+            intangible space of imagination into reality is fascinating.
+            </p>
+
+            <div style="float:right; 
+            margin-left:15px; 
+            padding-top:8px;
+            padding-right:3px;">
+                
+                <img data-aos="zoom-in" src="images/server-tibiacl2.png"
+                 style="height:155px; border-radius: 4px;">
+
+            </div>
+
+                 <p data-aos="fade-up">
+                    I’m not sure if programming itself is my passion, I would say 
+                    is a combination of things. Coding is a catalyst for creation. 
+                    To be able to portrai a complex idea that was taking from the 
+                    intangible space of imagination into reality is fascinating.
+                    </p>
+                   
+                    <p data-aos="fade-up">
+                    <span class="a">php</span>
+                    <span class="a">css</span>
+                    <span class="a">html</span>
+                    <span class="a">sql</span>
+                    <span class="a">photoshop</span>
+                    </p>
+        </div>
+    </div> 
+
+
+        <!-------------------------------------------------------------->
 
         <!--SVG divider-->
-    <div class="divider" style="background-color:#f7f7f7;" >
+    <div class="divider-one" style="background-color:#f7f7f7;" >
         <svg style="
             fill: #0b1a2e;
             width: 100%;
@@ -363,7 +364,7 @@
     
         <!--END OF DOWNLOADS SEGMENT--------------------------->
 
-        <div class="divider" style="background-color:#0b1a2e;" >
+        <div class="divider-one" style="background-color:#0b1a2e;" >
             <svg style="
                 fill: orangered;
                 width: 100%;
